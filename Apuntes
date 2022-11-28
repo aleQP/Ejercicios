@@ -1,0 +1,75 @@
+		GIT
+
+	-- IDENTIDAD --
+git config --global user.name "Nombre user"
+git config --global user.email correo@ejemplo.com
+git config --list		
+git help
+
+	-- NUEVO REPOSITORIO --
+git init
+
+	-- STAGING AREA (AREA DE PREPARACION) --
+
+-- AGREGAR ARCHIVOS AL AREA DE PREPARACION
+git add [opc]<file_1><file_2>...
+
+-- GUARDAR CAMBIOS
+git commit [opc]<file_1><file_2>..[-m <"Mensaje de cambios">]
+
+-- VER ARCHIVOS DEL DIRECTORIO DE TRABAJO Y DEL AREA DE PREPARACION
+git status
+
+-- HASH DE COMMITS HECHOS
+git log
+
+-- VER DIFERENCIAS ENTRE COMMITS
+git diff
+
+-- CAMBIO DE NOMBRE ARCHIVO O DIRECTORIO
+git mv
+
+
+	
+	-- REPOSITORIOS REMOTOS --
+
+-- CLONAR UN REPOSIORIO REMOTO
+git clone <URL>
+
+-- VER REPOSITORIOS CONFIGURADOS
+git remote -v
+
+-- CONECTAR REPOSITORIO LOCAL A REMOTO
+git remote add <Nombre repositorio><URL remoto>
+
+-- OBTENER CAMBIOS DE REMOTO A LOCAL SIN FUSIONAR
+git fetch [nombre-remoto]
+
+-- OBTENER CAMBIOS DE REMOTO A LOCAL FUSIONANDO
+git pull 
+
+-- ENVIAR DEL REPOSITORIO LOCAL AL REMOTO
+git push
+
+
+
+	-- RAMAS --
+
+-- LISTAR RAMAS
+git branch
+
+-- CREAR UNA NUEVA RAMA
+git branch <Nombre rama><Commit de comienzo>
+
+-- MOVERSE ENTRE RAMAS
+git checkout <Nombre_rama>
+
+-- ENVIAR A SERVIDOR
+git push <nombre-remoto><nombre-rama>
+
+
+
+	CSS
+Position 
+	relative -> Father
+	absolute -> Son
